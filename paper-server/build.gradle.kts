@@ -206,14 +206,14 @@ tasks.jar {
         val gitBranch = git.exec(providers, "rev-parse", "--abbrev-ref", "HEAD").get().trim()
         attributes(
             "Main-Class" to "org.bukkit.craftbukkit.Main",
-            "Implementation-Title" to "Paper",
+            "Implementation-Title" to "Vibe",
             "Implementation-Version" to implementationVersion,
             "Implementation-Vendor" to date,
-            "Specification-Title" to "Paper",
+            "Specification-Title" to "VibeSpigot",
             "Specification-Version" to project.version,
-            "Specification-Vendor" to "Paper Team",
+            "Specification-Vendor" to "Vibe Team",
             "Brand-Id" to "papermc:paper",
-            "Brand-Name" to "Paper",
+            "Brand-Name" to "VibeSpigot",
             "Build-Number" to (build ?: ""),
             "Build-Time" to buildTime.toString(),
             "Git-Branch" to gitBranch,
